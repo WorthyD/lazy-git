@@ -1,9 +1,7 @@
-return {
-
-    -- file explorer
-    {
-      "nvim-neo-tree/neo-tree.nvim",
-      cmd = "Neotree",
+return { -- file explorer
+{
+    "nvim-neo-tree/neo-tree.nvim",
+    cmd = "Neotree",
     --   keys = {
     --     {
     --       "<leader>fe",
@@ -34,18 +32,26 @@ return {
     --       end
     --     end
     --   end,
-      opts = {
-        -- filesystem = {
-        --   bind_to_cwd = false,
-        --   follow_current_file = true,
-        --   use_libuv_file_watcher = true,
-        -- },
-        window = {
-          mappings = {
-            ["<space>"] = "none",
-            ["o"]="open"
-          },
+    opts = {
+        filesystem = {
+            --   bind_to_cwd = false,
+            --   follow_current_file = true,
+            --   use_libuv_file_watcher = true,
+            filtered_items = {
+                visible = false,
+                hide_dotfiles = false,
+                hide_gitignored = true,
+                hide_hidden = true,
+                hide_by_name = {".DS_Store", "thumbs.db"},
+                never_show = {"node_modules"}
+            }
         },
+        window = {
+            mappings = {
+                ["<space>"] = "none",
+                ["o"] = "open"
+            }
+        }
         -- default_component_configs = {
         --   indent = {
         --     with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
@@ -54,7 +60,7 @@ return {
         --     expander_highlight = "NeoTreeExpander",
         --   },
         -- },
-      },
+    }
     --   config = function(_, opts)
     --     require("neo-tree").setup(opts)
     --     vim.api.nvim_create_autocmd("TermClose", {
@@ -66,5 +72,4 @@ return {
     --       end,
     --     })
     --   end,
-    }
-}
+}}
