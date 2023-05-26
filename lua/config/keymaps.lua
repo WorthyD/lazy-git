@@ -29,6 +29,8 @@ map("n", ",l", "<C-w>l", { desc = "Go to right window" })
 
 map("i", "jj", "<Esc>")
 
+map("x", "<leader>p", "\"_dP",{desc="Proper Paste"})
+
 -- Tabs
 map("n", "<leader><tab>]", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
