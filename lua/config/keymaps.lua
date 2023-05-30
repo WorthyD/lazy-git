@@ -22,9 +22,13 @@ map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window" })
 map("n", "<C-l>", "<C-w>l", { desc = "Go to right window" })
 
 map("n", ",h", "<C-w>h", { desc = "Go to left window" })
-map("n", ",j", "<C-w>j", { desc = "Go to lower window" })
+map("n", ",j", "<C-w>j", { desc = "Go to lowwer window" })
 map("n", ",k", "<C-w>k", { desc = "Go to upper window" })
 map("n", ",l", "<C-w>l", { desc = "Go to right window" })
+
+-- Re-centers screen after use.
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
 
 
 map("i", "jj", "<Esc>")
