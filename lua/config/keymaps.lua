@@ -42,3 +42,4 @@ map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 if Util.has("neotree.nvim") then
     map("n", "o", "<2-LeftMouse>", { desc = "Open" })
   end
+  

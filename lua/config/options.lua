@@ -6,4 +6,5 @@ local opt = vim.opt
 
 opt.relativenumber = false -- Relative line numbers
 opt.conceallevel = 0
-opt.formatoptions = "jcrqlnt" -- tcqj
+--opt.formatoptions = "jcroqlnt" -- tcqj
+opt.formatoptions = "jqlnt" -- tcqj
