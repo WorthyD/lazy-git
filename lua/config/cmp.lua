@@ -1,5 +1,4 @@
 return {
-["<Tab>"] = cmp.mapping.confirm({select = true}),
-
+    -- ["<Tab>"] = cmp.mapping.confirm({select = true}),
 
 }
