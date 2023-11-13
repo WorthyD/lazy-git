@@ -3,9 +3,12 @@ require'nvim-treesitter.install'.compilers = {'zig'}
 
 return { -- {"nvim-treesitter/nvim-treesitter-angular"}, 
 {
+<<<<<<< HEAD
     "elgiano/nvim-treesitter-angular",
     branch = "topic/jsx-fix"
 }, {
+=======
+>>>>>>> b1ecb98f6c4e641eee978ee33a0aab966a8ef858
     "nvim-treesitter/nvim-treesitter",
     opts = {
         ensure_installed = {"bash", "html", "javascript", "json", "lua", "markdown", "markdown_inline", "python",
@@ -25,4 +28,8 @@ return { -- {"nvim-treesitter/nvim-treesitter-angular"},
 --     "elgiano/nvim-treesitter-angular",
 --     branch = "topic/jsx-fix"
 -- }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1ecb98f6c4e641eee978ee33a0aab966a8ef858
 }
