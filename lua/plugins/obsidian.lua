@@ -1,6 +1,6 @@
-if true then
-    return {}
-end
+-- if true then
+--     return {}
+-- end
 return {{
     "epwalsh/obsidian.nvim",
     -- lazy = true,
@@ -10,10 +10,10 @@ return {{
     dependencies = { -- Required.
     "nvim-lua/plenary.nvim"},
     opts = {
-        -- dir = "~/Notes", -- no need to call 'vim.fn.expand' here
+         dir = "~/Notes", -- no need to call 'vim.fn.expand' here
         daily_notes = {
             -- Optional, if you keep daily notes in a separate directory.
-            folder = "journal/daily"
+            folder = "Daily Notes"
         },
         templates = {
             subdir = "templates"
