@@ -13,7 +13,9 @@ return {{
          dir = "~/Notes", -- no need to call 'vim.fn.expand' here
         daily_notes = {
             -- Optional, if you keep daily notes in a separate directory.
-            folder = "Daily Notes"
+            folder = "Daily Notes",
+            template = "daily.md"
+
         },
         templates = {
             subdir = "templates"
